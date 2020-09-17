@@ -1,5 +1,6 @@
 katz_deli = []
 def line(array)
+<<<<<<< HEAD
     position = []
 if array.empty?
     puts "The line is currently empty."
@@ -27,3 +28,21 @@ end
     katz_deli.shift
   end
   end
+=======
+  line_position = []
+  if array.empty?
+    puts "The line is currently empty."
+  else
+    counter = 1
+    array.each do |customer|
+      line_position << "#{counter}. #{customer}"
+      counter += 1
+    end
+    puts "The line is currently: #{line_position.join(" ")}"
+  end
+end
+
+def take_a_number(katz_deli, name)
+  
+  
+>>>>>>> ebd7b7cc77e08628689923af308c7132560e90a9
